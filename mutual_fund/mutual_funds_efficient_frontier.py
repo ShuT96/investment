@@ -88,7 +88,7 @@ def plot_efficient_frontier(results_df, min_VaR_port, max_sharpe_port, min_vol_p
 
 def main():
 
-    excel_file = r'C:\Users\shusu\Google Drive\2_Finance\2021\Rebalance\Q1.xlsx'
+    excel_file = r'2021\Rebalance\Q1.xlsx'
     pd.set_option('display.max_columns', None, 'display.expand_frame_repr', False)
     df = excel_to_df(excel_file)
     result_pf_df = simulate_random_portfolios(num_port, df[1], df[2], alpha, rf, days)
